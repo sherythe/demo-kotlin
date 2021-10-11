@@ -12,7 +12,7 @@ data class Account(
         var name : String,
         var address : String,
         var occupation : String,
-        var accountLimit : BigDecimal,
-        var usedLimit : BigDecimal,
+        var accountLimit : BigDecimal = BigDecimal(10000),
+        var usedLimit : BigDecimal = BigDecimal.ZERO,
         var isActive : Boolean = true
 )
